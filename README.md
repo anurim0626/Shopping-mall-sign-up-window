@@ -1,10 +1,33 @@
 # Shopping-mall-sign-up-window
 # 쇼핑몰 페이지
 
-### 페이지 설명 
+## 페이지 설명 
 쇼핑몰 회원 관리 페이지로, 회원 가입 및 회원정보 수정이 가능 
 
+## 1. 페이지 레이아웃 - HTML, 자바스크립트(유효성 검사 함수)
+### -css-
+![image](https://user-images.githubusercontent.com/102803326/186083067-a263c6e8-78ce-4927-bb10-df3929f71af1.png)
+### -jsp-
+![image](https://user-images.githubusercontent.com/102803326/186083129-842c0a3a-eaff-4e79-9dab-d002fe8e8665.png)
+![image](https://user-images.githubusercontent.com/102803326/186083232-890b7324-9a99-4685-8499-7cbfe7360107.png)
+![image](https://user-images.githubusercontent.com/102803326/186083273-8453fbb7-369f-4ee0-83c8-33d9d06ad97d.png)
+![image](https://user-images.githubusercontent.com/102803326/186083299-4ab9532e-19e2-4af8-b39f-6dd43fa235b5.png)
+## -실행화면-
 
+![image](https://user-images.githubusercontent.com/102803326/186063771-b324ea20-67a1-42f6-9ffe-99dc1c96e1b7.png)
+
+## 2. DB연결 자바 파일 만들기
+![image](https://user-images.githubusercontent.com/102803326/186083470-eac027a2-a3f6-4139-b1bd-69aaf61c76c9.png)
+
+3.오라클에 필요한 테이블과 데이터 생성
+![image](https://user-images.githubusercontent.com/102803326/186083807-5f9111d4-1fbf-449a-ba79-ecbc39a9dba5.png)
+
+4. 자바와 쿼리문을 이용하여 회원번호 mex 값 불러들여서 회원번호 자동발생
+
+5. form 태그에 지정된 action 페이지(join_p) 제작
+![image](https://user-images.githubusercontent.com/102803326/186084273-5c4f75ab-f240-4469-b226-51c39957db5d.png)
+
+6. join_P페이지는 사용자가 입력한 데이터를 오라클로 전달
 
 ### 실행 코드
 
@@ -28,10 +51,6 @@
 ### --스트링 형태로 데이터 베이스를 연결 
 
 
-## -실행화면-
-
-![image](https://user-images.githubusercontent.com/102803326/186063771-b324ea20-67a1-42f6-9ffe-99dc1c96e1b7.png)
---스트링 형태로 데이터 베이스를 연결 
 
 ```jap
 <!DOCTYPE html>
