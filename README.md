@@ -8,73 +8,7 @@
 
 ### 실행 코드
 
-```css
-* { margin:0; padding: 0; }
-ul, li { list-style: none; }
-a { color: #ffffff; text-decoration: none; }
 
-#header {
-	width: 100%;
-	height: 80px;
-	background-color: black;
-	color: white;
-	text-align: center;
-	line-height: 80px;
-}
-#nav {
-	width: 100%;
-	height: 40px;
-	background-color: #6094ff;
-	color: white;
-	line-height: 40px;
-}
-#nav ul li a {
-	float: left;
-	padding: 0 10px;
-}
-.section {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: white;
-}
-.section p {
-	/* width: 800px; */
-	padding: 10px;
-	/* margin: 0 auto; */
-}
-.scroll {
-	height: 400px;
-	overflow-y: auto;
-}
-.title {
-	padding: 30px 0 20px 0;
-	text-align: center;
-}
-.table_line {
-	margin: 0 auto;
-	overflow-y: auto;
-	border: 1px solid black;
-}
-.table_line th, .table_line td {
-	padding: 5px;
-	border: 1px solid black;
-}
-.table_line .center td {
-	text-align: center;
-}
-#footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 30px;
-	background-color: blue;
-	color: white;
-	text-align: center;
-	line-height: 30px;
-	font-size: 11px;
-}
-```
 ```jsp
 <%@ page import="DB.DBConnect"%>
 <%@ page import="java.sql.*"%>
@@ -90,7 +24,11 @@ a { color: #ffffff; text-decoration: none; }
 	rs.next();
 	int num = rs.getInt(1)+1;
 %>  
+```
 
+--스트링 형태로 데이터 베이스를 연결 
+
+```jap
 <!DOCTYPE html>
 <html>
 <head>
