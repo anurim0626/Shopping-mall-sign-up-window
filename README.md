@@ -25,6 +25,9 @@
 	int num = rs.getInt(1)+1;
 %>  
 ```
+### --스트링 형태로 데이터 베이스를 연결 
+
+
 ## -실행화면-
 
 ![image](https://user-images.githubusercontent.com/102803326/186063771-b324ea20-67a1-42f6-9ffe-99dc1c96e1b7.png)
