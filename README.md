@@ -19,15 +19,15 @@
 ## 2. DB연결 자바 파일 만들기
 ![image](https://user-images.githubusercontent.com/102803326/186083470-eac027a2-a3f6-4139-b1bd-69aaf61c76c9.png)
 
-3.오라클에 필요한 테이블과 데이터 생성
+## 3.오라클에 필요한 테이블과 데이터 생성
 ![image](https://user-images.githubusercontent.com/102803326/186083807-5f9111d4-1fbf-449a-ba79-ecbc39a9dba5.png)
 
-4. 자바와 쿼리문을 이용하여 회원번호 mex 값 불러들여서 회원번호 자동발생
+## 4. 자바와 쿼리문을 이용하여 회원번호 mex 값 불러들여서 회원번호 자동발생
 
-5. form 태그에 지정된 action 페이지(join_p) 제작
+## 5. form 태그에 지정된 action 페이지(join_p) 제작
 ![image](https://user-images.githubusercontent.com/102803326/186084273-5c4f75ab-f240-4469-b226-51c39957db5d.png)
 
-6. join_P페이지는 사용자가 입력한 데이터를 오라클로 전달
+## 6. join_P페이지는 사용자가 입력한 데이터를 오라클로 전달
 
 ### 실행 코드
 
