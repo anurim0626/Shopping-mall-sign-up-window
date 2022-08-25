@@ -170,14 +170,18 @@
 			  +"case when grade = 'A' then 'VIP' when grade = 'B' then '일반' else '직원' end grade, "
 			  +"city from member_tbl_02 order by custno asc";
  ```
--등급에 따라서 등급이 달라지도록 쿼리문을 적성합니다.-
+-회원 정보를 검색하기 위한 쿼리문을 적성합니다.
+
+
 ```jsp
 	Connection conn = DBConnect.getConnection();
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	ResultSet rs = pstmt.executeQuery();
 %>    
 ```
--쿼리문을 실행시키기 위한 객체변수를 먼들어 줍니다.-\
+-쿼리문을 실행시키기 위한 객체변수를 먼들어 줍니다.-
+-"Connection conn = DBConnect.getConnection(); 디비 연결을 해줍니다 *중요*
+- "pstmt" 이곳에 쿼리문이 들어갑니다. 실행결과는 Rs로 들어가게 됩니다. 
 ```jsp
 <title>member_list</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -226,8 +230,8 @@
 				%>
 			</table>	
 ```
--반복문을 실행하기 위해 테이블을 만들어주고 넥스트 값을 설정하여 결과 변수(데이터)의 유무를 판단해 줍니다.-
- 
+-"while"dms "Rs"에 들어긴 입력값 만큼만 반복합니다.입력값이 없을경우 반복하지 않고 실행이 끝나게 됩니다.
+
 ## 실행화면
 
 ![image](https://user-images.githubusercontent.com/102803326/186580019-0fb4b1d4-35fc-4007-80dd-871d57712ad0.png)
