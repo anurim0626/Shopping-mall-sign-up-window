@@ -161,5 +161,78 @@
 
 ![image](https://user-images.githubusercontent.com/102803326/186063834-6304ea9a-79bd-4e72-8090-ed281d42bed8.png)
 
+### -실행코드-
+
+```jsp
+<%
+	String sql="select custno, custname, phone, address, "
+	          +"to_char(joindate,'yyyy-mm-dd') joindate, "
+			  +"case when grade = 'A' then 'VIP' when grade = 'B' then '일반' else '직원' end grade, "
+			  +"city from member_tbl_02 order by custno asc";
+ ```
+-등급에 따라서 등급이 달라지도록 쿼리문을 적성합니다.-
+```jsp
+	Connection conn = DBConnect.getConnection();
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	ResultSet rs = pstmt.executeQuery();
+%>    
+```
+-쿼리문을 실행시키기 위한 객체변수를 먼들어 줍니다.-\
+```jsp
+<title>member_list</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+	  <jsp:include page="layout/header.jsp"></jsp:include>
+ </header>
+
+ <nav>
+   	 <jsp:include page="layout/nav.jsp"></jsp:include>
+ </nav>
+		
+ <section class="section">
+   	 <h2>홈쇼핑 회원 명단</h2><br>
+  
+	<table class="table_line">
+				<tr>
+					<th>회원번호</th>
+					<th>회원성명</th>
+					<th>전화번호</th>
+					<th>주소</th>
+					<th>가입일자</th>
+					<th>고객등급</th>
+					<th>거주지역</th>
+					
+				</tr>
+				<%
+					while(rs.next()) {
+				%>
+				<tr class="center">
+					<td><%= rs.getString("custno")%></td>
+					<td><%= rs.getString("custname") %></td>
+					<td><%= rs.getString("phone") %></td>
+					<td><%= rs.getString("address") %></td>
+					<td><%= rs.getString("joindate") %></td>
+					<td><%= rs.getString("grade") %></td>
+					<td><%= rs.getString("city") %></td>
+					<td>
+						
+						<input type="button" value="수정" >
+						<input type="button" value="삭제" ></td>
+				</tr>
+				<%
+					}
+				%>
+			</table>	
+```
+-반복문을 실행하기 위해 테이블을 만들어주고 넥스트 값을 설정하여 결과 변수(데이터)의 유무를 판단해 줍니다.-
+ 
+## 실행화면
+
+![image](https://user-images.githubusercontent.com/102803326/186580019-0fb4b1d4-35fc-4007-80dd-871d57712ad0.png)
+
+
+
 
 
