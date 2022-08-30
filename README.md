@@ -231,7 +231,7 @@
 			</table>	
 ```
 -"while"dms "Rs"에 들어긴 입력값 만큼만 반복합니다.입력값이 없을경우 반복하지 않고 실행이 끝나게 됩니다.
-
+-연결하여 실행합니다.
 ## 실행화면
 
 ![image](https://user-images.githubusercontent.com/102803326/186580019-0fb4b1d4-35fc-4007-80dd-871d57712ad0.png)
