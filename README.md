@@ -236,7 +236,8 @@
 
 ![image](https://user-images.githubusercontent.com/102803326/186580019-0fb4b1d4-35fc-4007-80dd-871d57712ad0.png)
 
-
-
+## member_search
+-회원정보를 조회하는 nav
+-
 
 
